@@ -1,0 +1,27 @@
+details{display:inline-block}
+summary{display:inline-block}
+/*details *{display:inline-block}*/
+.paragraph{
+    display: block;
+    margin: 16px 0;
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    disp1ay: none
+  }
+  /* Убираем стандартный маркер Firefox */
+  details > summary {
+    list-style: none;
+  }
+  
+  /* Добавляем собственный маркер для закрытого состояния */
+  details summary:before {
+    content: '\2B9E';
+    margin-right: 7px;
+  }
+  
+  /* Добавляем собственный маркер для открытого состояния */
+  details[open] summary:before {
+    content: '\2B9F';
+  }
