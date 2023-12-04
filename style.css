@@ -8,7 +8,7 @@ summary{display:inline-block}
 
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
-    disp1ay: none
+    display: none
   }
   /* Убираем стандартный маркер Firefox */
   details > summary {
